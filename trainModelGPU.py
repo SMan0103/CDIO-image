@@ -22,7 +22,7 @@ def main():
     # Move model to GPUs
     model = model.cuda()
 
-    dloc = f"{HOME}/Robotdataset/"
+    dloc = f"{HOME}/dataset/"
 
     print(f"Training YOLOv8{model_size.upper()} model...")
 
