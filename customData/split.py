@@ -3,11 +3,11 @@ import random
 import shutil
 
 # Source directories
-image_dir = './eggSet/images'  # original image folder
-label_dir = './eggSet/labels'  # original label folder
+image_dir = 'C:/Users/Simon/CDIO-image/customData/dataset5/images'  # original image folder
+label_dir = 'C:/Users/Simon/CDIO-image/customData/dataset5/labels'  # original label folder
 
 # Output dataset directory
-output_dir = f'./imageRecognition/customData/{dataset_dir}/dataset'
+output_dir = f'./customData/dataset'  # output dataset folder
 splits = {
     'train': 0.7,
     'valid': 0.15,
