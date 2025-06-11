@@ -3,8 +3,8 @@ from ultralytics import YOLO
 import cv2
 
 # === CONFIGURATION ===
-model_path = "./customData/bestRobot.pt"  # Replace with your actual model path
-pictures_folder = "./customData/pictures"
+model_path = "./Model/best.pt"  # Replace with your actual model path
+pictures_folder = "./customData/dataset6"
 labels_folder = "labels"
 annotations_folder = "annotations"
 #max_images = 100

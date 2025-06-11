@@ -13,7 +13,7 @@ def main():
     torch.cuda.empty_cache()
 
     # Model Size 'n' for nano, 's' for small, 'm' for medium, 'l' for large, 'x' for extra large
-    model_size = 'l'  # Change this to 'n', 's', 'm', 'l', or 'x' as needed
+    model_size = 's'  # Change this to 'n', 's', 'm', 'l', or 'x' as needed
 
     model_name = f'yolov8{model_size}.pt'
     model = YOLO(model_name)
@@ -27,10 +27,10 @@ def main():
     print(f"Training YOLOv8{model_size.upper()} model...")
 
     train_config = {
-        'epochs': 100,
-        'batch': 32,
-        'imgsz': 308,
-        'device': '0',
+        'epochs': 300,
+        'batch': 64,
+        'imgsz': 600,
+        'device': '1',
         'data': f"{dloc}data.yaml",
         'project': 'runs/train',
         'name': 'experiment',
