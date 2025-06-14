@@ -13,7 +13,7 @@ if not cap.isOpened():
 # today = date.today()
 imgCounter = 0
 frameCounter = 0
-batch = 7
+batch = 9
 while True:
     ret, frame = cap.read()
     # Capture frame-by-frame
@@ -26,13 +26,6 @@ while True:
     # Display the resulting frame
     cv2.imshow('Webcam Feed', frame)
 
-    # Take screen shots every tenth frame automatically
-    # if frameCounter % 10 == 0:
-    #     imgName = f"customData/dataset1/Screenshots/_picture_{imgCounter}.png"
-    #     cv2.imwrite(imgName, frame)
-    #     print("Screenshot taken")
-    #     imgCounter += 1
-
     key = cv2.waitKey(1)
 
     # Press 'q' to exit
@@ -41,7 +34,7 @@ while True:
 
     elif key & 0xFF == ord('s'):
         # imgName = f"customData/{date.today}_picture_{imgCounter}.png"
-        imgName = f"customData/dataset6/batch{batch}_picture{imgCounter}.png"
+        imgName = f"customData/dataset8/batch{batch}_picture{imgCounter}.png"
 
         cv2.imwrite(imgName, frame)
         print("Screenshot taken")
