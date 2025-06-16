@@ -13,7 +13,7 @@ if not cap.isOpened():
 # today = date.today()
 imgCounter = 0
 frameCounter = 0
-batch = 9
+batch = 11
 while True:
     ret, frame = cap.read()
     # Capture frame-by-frame
@@ -34,7 +34,7 @@ while True:
 
     elif key & 0xFF == ord('s'):
         # imgName = f"customData/{date.today}_picture_{imgCounter}.png"
-        imgName = f"customData/dataset8/batch{batch}_picture{imgCounter}.png"
+        imgName = f"customData/dataset9/batch{batch}_picture{imgCounter}.png"
 
         cv2.imwrite(imgName, frame)
         print("Screenshot taken")
